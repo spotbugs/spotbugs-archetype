@@ -1,0 +1,17 @@
+<archetype xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype/1.0.0 http://maven.apache.org/xsd/archetype-1.0.0.xsd">
+  <id>spotbugs-archetype</id>
+  <sources>
+    <source>src/main/java/MyDetector.java</source>
+  </sources>
+  <testSources>
+    <source>src/test/java/BadCase.java</source>
+    <source>src/test/java/GoodCase.java</source>
+    <source>src/test/java/MyDetectorTest.java</source>
+  </testSources>
+  <resources>
+    <resource>README.md</resource>
+    <resource>src/main/resources/findbugs.xml</resource>
+    <resource>src/main/resources/messages.xml</resource>
+  </resources>
+</archetype>

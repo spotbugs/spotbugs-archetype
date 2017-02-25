@@ -1,0 +1,53 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.sonatype.oss</groupId>
+    <artifactId>oss-parent</artifactId>
+    <version>7</version>
+  </parent>
+
+  <groupId>com.github.spotbugs</groupId>
+  <artifactId>spotbugs-archetype</artifactId>
+  <name>SpotBugs Maven Archetype</name>
+  <version>0.1.0-SNAPSHOT</version>
+  <packaging>maven-archetype</packaging>
+
+  <url>https://github.com/spotbugs/spotbugs-archetype</url>
+  <description>A Maven archetype for SpotBugs plugin project</description>
+
+  <scm>
+    <connection>scm:git:git@github.com:spotbugs/spotbugs-archetype.git</connection>
+    <developerConnection>scm:git:git@github.com:spotbugs/spotbugs-archetype.git</developerConnection>
+    <url>git@github.com:spotbugs/spotbugs-archetype.git</url>
+  </scm>
+  <developers>
+    <developer>
+      <id>KengoTODA</id>
+      <name>Kengo TODA</name>
+      <url>https://kengotoda.github.io/</url>
+    </developer>
+  </developers>
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+    </license>
+  </licenses>
+  <build>
+    <extensions>
+      <extension>
+        <groupId>org.apache.maven.archetype</groupId>
+        <artifactId>archetype-packaging</artifactId>
+        <version>3.0.0</version>
+      </extension>
+    </extensions>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-archetype-plugin</artifactId>
+        <version>2.4</version>
+      </plugin>
+    </plugins>
+  </build>
+</project>

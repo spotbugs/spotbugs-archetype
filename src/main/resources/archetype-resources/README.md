@@ -1,0 +1,1 @@
+# My SpotBugs plugin
