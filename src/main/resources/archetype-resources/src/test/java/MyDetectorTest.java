@@ -20,7 +20,7 @@ public class MyDetectorTest {
 
     @Test
     public void testGoodCase() {
-        Path path = Paths.get("target/test-classes", "${groupId}".replace('.', '/'), "GoodCase.class");
+        Path path = Paths.get("target/test-classes", "${package}".replace('.', '/'), "GoodCase.class");
         BugCollection bugCollection = spotbugs.performAnalysis(path);
 
         BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder()
@@ -30,7 +30,7 @@ public class MyDetectorTest {
 
     @Test
     public void testBadCase() {
-        Path path = Paths.get("target/test-classes", "${groupId}".replace('.', '/'), "BadCase.class");
+        Path path = Paths.get("target/test-classes", "${package}".replace('.', '/'), "BadCase.class");
         BugCollection bugCollection = spotbugs.performAnalysis(path);
 
         BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder()
