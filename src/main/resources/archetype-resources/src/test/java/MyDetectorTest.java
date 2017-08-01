@@ -1,6 +1,6 @@
 package ${package};
 
-import static edu.umd.cs.findbugs.test.SpotBugsRule.containsExactly;
+import static edu.umd.cs.findbugs.test.CountMatcher.containsExactly;
 import static org.junit.Assert.assertThat;
 
 import java.nio.file.Path;
@@ -25,7 +25,7 @@ public class MyDetectorTest {
 
         BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder()
                 .bugType("MY_BUG").build();
-        assertThat(bugCollection, containsExactly(bugTypeMatcher, 0));
+        assertThat(bugCollection, containsExactly(0, bugTypeMatcher));
     }
 
     @Test
@@ -35,6 +35,6 @@ public class MyDetectorTest {
 
         BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder()
                 .bugType("MY_BUG").build();
-        assertThat(bugCollection, containsExactly(bugTypeMatcher, 1));
+        assertThat(bugCollection, containsExactly(1, bugTypeMatcher));
     }
 }
