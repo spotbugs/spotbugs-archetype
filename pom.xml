@@ -20,6 +20,7 @@
     <developerConnection>scm:git:git@github.com:spotbugs/spotbugs-archetype.git</developerConnection>
     <url>git@github.com:spotbugs/spotbugs-archetype.git</url>
   </scm>
+
   <developers>
     <developer>
       <id>KengoTODA</id>
@@ -33,20 +34,27 @@
       <url>http://www.apache.org/licenses/LICENSE-2.0</url>
     </license>
   </licenses>
+
+  <properties>
+    <mavenArchetypeVersion>3.0.1</mavenArchetypeVersion>
+  </properties>
+
   <build>
     <extensions>
       <extension>
         <groupId>org.apache.maven.archetype</groupId>
         <artifactId>archetype-packaging</artifactId>
-        <version>3.0.0</version>
+        <version>${mavenArchetypeVersion}</version>
       </extension>
     </extensions>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-archetype-plugin</artifactId>
-        <version>2.4</version>
-      </plugin>
-    </plugins>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-archetype-plugin</artifactId>
+          <version>${mavenArchetypeVersion}</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
   </build>
 </project>
