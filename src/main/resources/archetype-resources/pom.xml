@@ -10,6 +10,7 @@
     <maven.compiler.target>1.8</maven.compiler.target>
     <maven.compiler.source>1.8</maven.compiler.source>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <spotbugsVersion>3.1.0-RC4</spotbugsVersion>
   </properties>
 
   <description>My SpotBugs plugin project</description>
@@ -17,7 +18,7 @@
     <dependency>
       <groupId>com.github.spotbugs</groupId>
       <artifactId>spotbugs</artifactId>
-      <version>3.1.0-RC4</version>
+      <version>${spotbugsVersion}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
@@ -29,7 +30,7 @@
     <dependency>
       <groupId>com.github.spotbugs</groupId>
       <artifactId>test-harness</artifactId>
-      <version>3.1.0-RC4</version>
+      <version>${spotbugsVersion}</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
