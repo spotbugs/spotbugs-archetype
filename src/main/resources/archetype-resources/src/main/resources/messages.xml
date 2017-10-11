@@ -24,4 +24,6 @@
 ]]>
     </Details>
   </BugPattern>
+
+  <BugCode abbrev="MY">My SpotBugs BugCode</BugCode>
 </MessageCollection>
