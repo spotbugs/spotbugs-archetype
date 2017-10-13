@@ -5,5 +5,5 @@
 
         <Detector class="${package}.MyDetector" reports="MY_BUG" speed="fast" />
 
-        <BugPattern abbrev="CBGL" type="MY_BUG" category="CORRECTNESS" />
+        <BugPattern abbrev="MY" type="MY_BUG" category="CORRECTNESS" />
 </FindbugsPlugin>
