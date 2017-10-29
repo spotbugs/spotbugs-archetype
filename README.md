@@ -8,7 +8,7 @@
 $ mvn archetype:generate \
     -DarchetypeArtifactId=spotbugs-archetype \
     -DarchetypeGroupId=com.github.spotbugs \
-    -DarchetypeVersion=0.1.0
+    -DarchetypeVersion=0.2.0
 ```
 
 ## License
