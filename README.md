@@ -4,11 +4,23 @@
 
 ## How to use
 
+Simply execute following commands, to create new Maven project in current directory:
+
 ```sh
 $ mvn archetype:generate \
     -DarchetypeArtifactId=spotbugs-archetype \
     -DarchetypeGroupId=com.github.spotbugs \
     -DarchetypeVersion=0.2.0
+```
+
+You can also set the version of SpotBugs via system property `spotBugsVersion`:
+
+```sh
+$ mvn archetype:generate \
+    -DarchetypeArtifactId=spotbugs-archetype \
+    -DarchetypeGroupId=com.github.spotbugs \
+    -DarchetypeVersion=0.3.0-SNAPSHOT \
+    -DspotBugsVersion=3.1.5
 ```
 
 ## License
