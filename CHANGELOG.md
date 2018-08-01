@@ -4,6 +4,8 @@ This is the changelog for SpotBugs Archetype. This follows [Keep a Changelog v1.
 
 Currently the versioning policy of this project follows [Semantic Versioning v2.0.0](http://semver.org/spec/v2.0.0.html).
 
+## Unreleased
+
 ## 0.2.1 - 2018-08-01
 
 * Use SpotBugs v3.1.6
