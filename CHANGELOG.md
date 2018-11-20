@@ -6,6 +6,8 @@ Currently the versioning policy of this project follows [Semantic Versioning v2.
 
 ## Unreleased
 
+* Use SpotBugs v3.1.9
+
 ## 0.2.1 - 2018-08-01
 
 * Use SpotBugs v3.1.6
