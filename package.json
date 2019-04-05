@@ -1,0 +1,33 @@
+{
+  "scripts": {
+    "semantic-release": "semantic-release"
+  },
+  "devDependencies": {
+    "@conveyal/maven-semantic-release": "^4.2.0",
+    "@semantic-release/changelog": "^3.0.2",
+    "@semantic-release/commit-analyzer": "^6.1.0",
+    "@semantic-release/git": "^7.0.8",
+    "@semantic-release/github": "^5.2.10",
+    "@semantic-release/release-notes-generator": "^7.1.4",
+    "semantic-release": "^15.13.3"
+  },
+  "release": {
+    "tagFormat": "${version}",
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/github",
+      "@conveyal/maven-semantic-release",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "pom.xml",
+            "CHANGELOG.md"
+          ]
+        }
+      ]
+    ]
+  }
+}

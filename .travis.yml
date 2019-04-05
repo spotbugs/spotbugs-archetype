@@ -1,5 +1,12 @@
 language: java
 sudo: false
 jdk: oraclejdk8
+install:
+  - nvm install
+  - yarn install
 script:
   - ./mvnw verify
+jobs:
+  include:
+    - stage: deploy
+      script: travis_wait yarn run semantic-release
