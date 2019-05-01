@@ -38,7 +38,7 @@
   </licenses>
 
   <properties>
-    <mavenArchetypeVersion>3.0.1</mavenArchetypeVersion>
+    <mavenArchetypeVersion>3.1.0</mavenArchetypeVersion>
   </properties>
 
   <build>
