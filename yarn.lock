@@ -18,10 +18,10 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
-"@conveyal/maven-semantic-release@^4.2.0":
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/@conveyal/maven-semantic-release/-/maven-semantic-release-4.3.0.tgz#2800b3e0dd527f25befb479a12df83fd21863fa3"
-  integrity sha512-l5/zxGAjjekpmmrF62DcrAVxqT2Rys7nz0btPuQXU3JQODP4jtS7nfgt8MvUjnByKFwgD+QqIG1dQ1900doFyQ==
+"@conveyal/maven-semantic-release@^4.4.0":
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/@conveyal/maven-semantic-release/-/maven-semantic-release-4.4.0.tgz#2fd4eb2b42d6b85c1687cdfa92e061867ef70469"
+  integrity sha512-0FiF821E+Wgw0mEUUCMMrNglo+59egy7tbiCbTNx2VSvUlasdbl3zxvQm0xlS5+CNhjJ8I9+Dd6KgJESV74rKQ==
   dependencies:
     "@semantic-release/error" "^2.2.0"
     aggregate-error "^1.0.0"
