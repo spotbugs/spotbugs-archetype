@@ -6,7 +6,7 @@
     "@conveyal/maven-semantic-release": "^4.5.0",
     "@semantic-release/changelog": "^3.0.5",
     "@semantic-release/commit-analyzer": "^6.3.1",
-    "@semantic-release/git": "^7.0.17",
+    "@semantic-release/git": "^7.0.18",
     "@semantic-release/github": "^5.5.5",
     "@semantic-release/release-notes-generator": "^7.3.2",
     "semantic-release": "^15.13.30"
