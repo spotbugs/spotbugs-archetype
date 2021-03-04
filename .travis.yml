@@ -2,7 +2,7 @@ language: java
 jdk: openjdk8
 install:
   - nvm install
-  - yarn install
+  - npm install
   - if [ -n "$encrypted_1636434a17e8_key" ]; then openssl aes-256-cbc -K $encrypted_1636434a17e8_key -iv $encrypted_1636434a17e8_iv -in .travis/codesigning.asc.enc -out .travis/codesigning.asc -d; fi
   - if [ -f ".travis/codesigning.asc" ]; then gpg --import .travis/codesigning.asc; fi
 script:
@@ -11,4 +11,4 @@ jobs:
   include:
     - stage: deploy
       script:
-        - travis_wait yarn run semantic-release
+        - travis_wait npm run semantic-release
