@@ -20,6 +20,5 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '${{ steps.nvm.outputs.NVMRC }}'
-      - runs: |
+      - run: |
           ./mvnw -V -B verify
-          npm run semantic-release
