@@ -2,4 +2,3 @@ node_modules
 target
 .project
 .settings
-.travis/codesigning.asc
