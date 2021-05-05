@@ -17,8 +17,17 @@ jobs:
       - uses: actions/setup-java@v1
         with:
           java-version: 8
+          server-id: ossrh
+          server-username: MAVEN_USERNAME
+          server-password: MAVEN_CENTRAL_TOKEN
+          gpg-private-key: ${{ secrets.SIGNING_KEY }}
+          gpg-passphrase: MAVEN_GPG_PASSPHRASE
       - uses: actions/setup-node@v2
         with:
           node-version: '${{ steps.nvm.outputs.NVMRC }}'
       - run: |
           ./mvnw -V -B verify
+        env:
+          MAVEN_USERNAME: eller86
+          MAVEN_CENTRAL_TOKEN: ${{ secrets.OSSRH_PASSWORD }}
+          MAVEN_GPG_PASSPHRASE: ${{ secrets.SIGNING_PASSWORD }}
