@@ -95,6 +95,16 @@
             </goals>
           </execution>
         </executions>
+        <configuration>
+          <!--
+            Prevent gpg from using pinentry programs
+            https://git.io/J3okS#Publishing-using-Apache-Maven
+          -->
+          <gpgArguments>
+            <arg>--pinentry-mode</arg>
+            <arg>loopback</arg>
+          </gpgArguments>
+        </configuration>
       </plugin>
       <plugin>
         <groupId>org.sonatype.plugins</groupId>
