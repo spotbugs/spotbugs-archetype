@@ -38,7 +38,7 @@
   </licenses>
 
   <properties>
-    <mavenArchetypeVersion>3.2.0</mavenArchetypeVersion>
+    <mavenArchetypeVersion>3.2.1</mavenArchetypeVersion>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
