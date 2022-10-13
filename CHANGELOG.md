@@ -1,3 +1,10 @@
+## [0.2.6](https://github.com/spotbugs/spotbugs-archetype/compare/0.2.5...0.2.6) (2022-10-13)
+
+
+### Bug Fixes
+
+* broken release process ([#172](https://github.com/spotbugs/spotbugs-archetype/issues/172)) ([5ef6f1d](https://github.com/spotbugs/spotbugs-archetype/commit/5ef6f1db2ac9f74bba2cb2a4fdde46c7a109fde4))
+
 ## [0.2.5](https://github.com/spotbugs/spotbugs-archetype/compare/0.2.4...0.2.5) (2022-10-13)
 
 
