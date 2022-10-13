@@ -1,3 +1,10 @@
+## [0.2.5](https://github.com/spotbugs/spotbugs-archetype/compare/0.2.4...0.2.5) (2022-10-13)
+
+
+### Bug Fixes
+
+* missing package on the Maven Central ([43a3af0](https://github.com/spotbugs/spotbugs-archetype/commit/43a3af0c4293086a2ee91d7014b63d3374de73c5)), closes [#167](https://github.com/spotbugs/spotbugs-archetype/issues/167)
+
 ## [0.2.4](https://github.com/spotbugs/spotbugs-archetype/compare/0.2.3...0.2.4) (2021-08-29)
 
 
