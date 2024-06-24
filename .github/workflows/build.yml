@@ -30,7 +30,7 @@ jobs:
           server-password: MAVEN_CENTRAL_TOKEN
           gpg-private-key: ${{ secrets.SIGNING_KEY }}
           gpg-passphrase: MAVEN_GPG_PASSPHRASE
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           node-version-file: '.nvmrc'
       - run: |
