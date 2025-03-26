@@ -2,7 +2,7 @@ on:
   push:
     branches:
       - master
-  pull_request_target:
+  pull_request:
     branches:
       - master
 
@@ -10,17 +10,9 @@ jobs:
   build:
     runs-on: 'ubuntu-latest'
     steps:
-      - name: Decide the ref to check out
-        uses: haya14busa/action-cond@v1
-        id: condval
-        with:
-          cond: ${{ github.event_name == 'pull_request_target' }}
-          if_true: refs/pull/${{ github.event.pull_request.number }}/merge
-          if_false: ${{ github.ref }}
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          ref: ${{ steps.condval.outputs.value }}
       - uses: actions/setup-java@v4
         with:
           java-version: 21
