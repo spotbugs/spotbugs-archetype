@@ -26,7 +26,6 @@ jobs:
         with:
           node-version-file: '.nvmrc'
       - run: |
-          gpg --version
           ./mvnw -B verify gpg:sign -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn
           npm ci
           npx semantic-release
