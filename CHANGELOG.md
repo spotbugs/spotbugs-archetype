@@ -1,25 +1,7 @@
 ## [0.2.7](https://github.com/spotbugs/spotbugs-archetype/compare/0.2.6...0.2.7) (2025-03-29)
 
-
 ### Bug Fixes
 
-* bump up SpotBugs to the latest release ([e169321](https://github.com/spotbugs/spotbugs-archetype/commit/e169321a00a48c7ec184c9173d6bf0762eef7eb1))
-* use latest SpotBugs built with JUnit4 ([13301a3](https://github.com/spotbugs/spotbugs-archetype/commit/13301a38143758dc5c7c8ec511d73955f76457d2))
-
-## [0.2.7](https://github.com/spotbugs/spotbugs-archetype/compare/0.2.6...0.2.7) (2025-03-29)
-
-
-### Bug Fixes
-
-* bump up SpotBugs to the latest release ([e169321](https://github.com/spotbugs/spotbugs-archetype/commit/e169321a00a48c7ec184c9173d6bf0762eef7eb1))
-* use latest SpotBugs built with JUnit4 ([13301a3](https://github.com/spotbugs/spotbugs-archetype/commit/13301a38143758dc5c7c8ec511d73955f76457d2))
-
-## [0.2.7](https://github.com/spotbugs/spotbugs-archetype/compare/0.2.6...0.2.7) (2025-03-29)
-
-
-### Bug Fixes
-
-* bump up SpotBugs to the latest release ([e169321](https://github.com/spotbugs/spotbugs-archetype/commit/e169321a00a48c7ec184c9173d6bf0762eef7eb1))
 * use latest SpotBugs built with JUnit4 ([13301a3](https://github.com/spotbugs/spotbugs-archetype/commit/13301a38143758dc5c7c8ec511d73955f76457d2))
 
 ## [0.2.6](https://github.com/spotbugs/spotbugs-archetype/compare/0.2.5...0.2.6) (2022-10-13)
