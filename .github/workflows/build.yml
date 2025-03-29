@@ -26,13 +26,12 @@ jobs:
         with:
           node-version-file: '.nvmrc'
       - run: |
-          cat ~/.m2/settings.xml
-          ./mvnw -B verify gpg:sign -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn
+          ./mvnw -B verify -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn
           npm ci
           npx semantic-release
         env:
           MAVEN_USERNAME: ${{ secrets.SONATYPE_USERNAME }}
           MAVEN_CENTRAL_TOKEN: ${{ secrets.SONATYPE_TOKEN }}
+          MAVEN_GPG_KEY_NAME: 'A123C97F'
           MAVEN_GPG_PASSPHRASE: ${{ secrets.SIGNING_PASSWORD }}
-          GPG_PASSPHRASE: gpg.passphrase
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
