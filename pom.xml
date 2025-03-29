@@ -93,16 +93,16 @@
             <goals>
               <goal>sign</goal>
             </goals>
+            <configuration>
+              <!-- https://central.sonatype.org/publish/publish-maven/#gpg-signed-components -->
+              <keyname>A123C97F</keyname>
+              <passphraseServerId>A123C97F</passphraseServerId>
+              <gpgArguments>
+                <arg>--pinentry-mode</arg>
+                <arg>loopback</arg>
+              </gpgArguments>
+            </configuration>
           </execution>
-          <configuration>
-            <!-- https://central.sonatype.org/publish/publish-maven/#gpg-signed-components -->
-            <keyname>A123C97F</keyname>
-            <passphraseServerId>A123C97F</passphraseServerId>
-            <gpgArguments>
-              <arg>--pinentry-mode</arg>
-              <arg>loopback</arg>
-            </gpgArguments>
-          </configuration>
         </executions>
       </plugin>
       <plugin>
