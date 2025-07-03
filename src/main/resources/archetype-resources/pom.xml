@@ -15,6 +15,12 @@
   <description>My SpotBugs plugin project</description>
   <dependencies>
     <dependency>
+        <groupId>org.ow2.asm</groupId>
+        <artifactId>asm</artifactId>
+        <version>9.8</version>
+        <scope>provided</scope>
+    </dependency>
+    <dependency>
       <groupId>com.github.spotbugs</groupId>
       <artifactId>spotbugs</artifactId>
       <version>${spotBugsVersion}</version>
