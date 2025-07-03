@@ -11,7 +11,7 @@
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
       "@semantic-release/changelog",
-      "@conveyal/maven-semantic-release",
+      "@terrestris/maven-semantic-release",
       "@semantic-release/github",
       [
         "@semantic-release/git",
