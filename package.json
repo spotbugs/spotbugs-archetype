@@ -1,9 +1,9 @@
 {
   "devDependencies": {
-    "@conveyal/maven-semantic-release": "^5.0.0",
-    "@semantic-release/changelog": "^6.0.3",
-    "@semantic-release/git": "^10.0.1",
-    "semantic-release": "^21.0.2"
+    "@terrestris/maven-semantic-release": "3.1.0",
+    "@semantic-release/changelog": "6.0.3",
+    "@semantic-release/git": "10.0.1",
+    "semantic-release": "24.2.6"
   },
   "release": {
     "tagFormat": "${version}",
