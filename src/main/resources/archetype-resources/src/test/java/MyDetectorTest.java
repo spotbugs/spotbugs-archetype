@@ -4,23 +4,22 @@ import static edu.umd.cs.findbugs.test.CountMatcher.containsExactly;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 import java.nio.file.Path;
-import java.nio.file.Paths;
 
-import org.junit.Rule;
-import org.junit.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.junit.jupiter.api.Test;
 
 import edu.umd.cs.findbugs.BugCollection;
-import edu.umd.cs.findbugs.test.SpotBugsRule;
 import edu.umd.cs.findbugs.test.matcher.BugInstanceMatcher;
 import edu.umd.cs.findbugs.test.matcher.BugInstanceMatcherBuilder;
+import edu.umd.cs.findbugs.test.SpotBugsExtension;
+import edu.umd.cs.findbugs.test.SpotBugsRunner;
 
+@ExtendWith(SpotBugsExtension.class)
 public class MyDetectorTest {
-    @Rule
-    public SpotBugsRule spotbugs = new SpotBugsRule();
 
     @Test
-    public void testGoodCase() {
-        Path path = Paths.get("target/test-classes", "${package}".replace('.', '/'), "GoodCase.class");
+    public void testGoodCase(SpotBugsRunner spotbugs) {
+        Path path = Path.of("target/test-classes", "${package}".replace('.', '/'), "GoodCase.class");
         BugCollection bugCollection = spotbugs.performAnalysis(path);
 
         BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder()
@@ -29,8 +28,8 @@ public class MyDetectorTest {
     }
 
     @Test
-    public void testBadCase() {
-        Path path = Paths.get("target/test-classes", "${package}".replace('.', '/'), "BadCase.class");
+    public void testBadCase(SpotBugsRunner spotbugs) {
+        Path path = Path.of("target/test-classes", "${package}".replace('.', '/'), "BadCase.class");
         BugCollection bugCollection = spotbugs.performAnalysis(path);
 
         BugInstanceMatcher bugTypeMatcher = new BugInstanceMatcherBuilder()

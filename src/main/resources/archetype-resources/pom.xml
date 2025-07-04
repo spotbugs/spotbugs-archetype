@@ -8,9 +8,9 @@
   <version>${version}</version>
 
   <properties>
-    <maven.compiler.release>8</maven.compiler.release>
+    <maven.compiler.release>11</maven.compiler.release>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <spotBugsVersion>4.7.3</spotBugsVersion>
+    <spotBugsVersion>4.9.3</spotBugsVersion>
   </properties>
 
   <description>My SpotBugs plugin project</description>
@@ -39,13 +39,19 @@
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>org.junit.vintage</groupId>
-      <artifactId>junit-vintage-engine</artifactId>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>com.github.spotbugs</groupId>
       <artifactId>test-harness</artifactId>
+      <version>${spotBugsVersion}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.github.spotbugs</groupId>
+      <artifactId>test-harness-jupiter</artifactId>
       <version>${spotBugsVersion}</version>
       <scope>test</scope>
     </dependency>
