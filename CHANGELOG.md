@@ -1,3 +1,10 @@
+## [0.4.2](https://github.com/spotbugs/spotbugs-archetype/compare/0.4.1...0.4.2) (2025-07-04)
+
+
+### Bug Fixes
+
+* **build:** Trying again ([9566e1a](https://github.com/spotbugs/spotbugs-archetype/commit/9566e1a040979e24d6951c25cd185fd540900b3d))
+
 ## [0.4.1](https://github.com/spotbugs/spotbugs-archetype/compare/0.4.0...0.4.1) (2025-07-04)
 
 
