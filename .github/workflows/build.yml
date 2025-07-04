@@ -24,8 +24,6 @@ jobs:
           server-id: central
           server-username: MAVEN_USERNAME
           server-password: MAVEN_CENTRAL_TOKEN
-          gpg-private-key: ${{ secrets.SIGNING_KEY }}
-          gpg-passphrase: MAVEN_GPG_PASSPHRASE
       - uses: actions/setup-node@v4
         with:
           node-version-file: '.nvmrc'
@@ -36,6 +34,9 @@ jobs:
           MAVEN_GPG_PASSPHRASE: ${{ secrets.SIGNING_PASSWORD }}
       - name: NPM CI
         run: npm ci
+      - name: Copy Maven settings
+        shell: bash
+        run: cp ~/.m2/settings.xml ./maven_settings.xml
       - name: NPM Exec Semantic Release
         run: npm exec semantic-release
         env:
