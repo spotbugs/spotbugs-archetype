@@ -15,7 +15,7 @@
         "@terrestris/maven-semantic-release",
         {
           "mvnw": true,
-          "settingsPath": "C:/Users/runneradmin/.m2/settings.xml",
+          "settingsPath": "${HOME}/.m2/settings.xml",
           "updateSnapshotVersion": true
         }
       ],
