@@ -1,3 +1,10 @@
+## [0.2.9](https://github.com/spotbugs/spotbugs-archetype/compare/0.2.8...0.2.9) (2025-07-04)
+
+
+### Bug Fixes
+
+* **build:** Attempt number two on release ([12d95f9](https://github.com/spotbugs/spotbugs-archetype/commit/12d95f98887caf7d121c61fd8a4c61b40ce9101b))
+
 ## [0.2.8](https://github.com/spotbugs/spotbugs-archetype/compare/0.2.7...0.2.8) (2025-07-04)
 
 
