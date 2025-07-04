@@ -36,8 +36,8 @@ jobs:
           MAVEN_GPG_PASSPHRASE: ${{ secrets.SIGNING_PASSWORD }}
       - name: NPM CI
         run: npm ci
-      - name: NPX Semantic Release
-        run: npx semantic-release
+      - name: NPM Exec Semantic Release
+        run: npm exec semantic-release
         env:
           MAVEN_USERNAME: ${{ secrets.SONATYPE_USERNAME }}
           MAVEN_CENTRAL_TOKEN: ${{ secrets.SONATYPE_TOKEN }}
