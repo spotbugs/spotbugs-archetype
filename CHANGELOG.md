@@ -1,3 +1,10 @@
+## [0.2.10](https://github.com/spotbugs/spotbugs-archetype/compare/0.2.9...0.2.10) (2025-07-04)
+
+
+### Bug Fixes
+
+* **build:** Move to spotbugs 4.9.3 ([cc753fd](https://github.com/spotbugs/spotbugs-archetype/commit/cc753fdd329b97fed25008bd2bd8ce9219132820))
+
 ## [0.2.9](https://github.com/spotbugs/spotbugs-archetype/compare/0.2.7...0.2.9) (2025-07-03)
 
 ### Usage
