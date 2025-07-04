@@ -22,8 +22,8 @@ jobs:
           java-version: 21
           cache: maven
           server-id: central
-          server-username: ${{ secrets.SONATYPE_USERNAME }}
-          server-password: ${{ secrets.SONATYPE_TOKEN }}
+          server-username: MAVEN_GPG_KEY_NAME
+          server-password: MAVEN_GPG_PASSPHRASE
           gpg-private-key: ${{ secrets.SIGNING_KEY }}
           gpg-passphrase: ${{ secrets.SIGNING_PASSWORD }}
       - uses: actions/setup-node@v4
