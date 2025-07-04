@@ -1,3 +1,10 @@
+## [0.4.1](https://github.com/spotbugs/spotbugs-archetype/compare/0.4.0...0.4.1) (2025-07-04)
+
+
+### Bug Fixes
+
+* **build:** Correct version number ([045a582](https://github.com/spotbugs/spotbugs-archetype/commit/045a582d1c797983c639dd096a25e35a664be1f9))
+
 # [0.4.0](https://github.com/spotbugs/spotbugs-archetype/compare/0.3.0...0.4.0) (2025-07-04)
 
 
