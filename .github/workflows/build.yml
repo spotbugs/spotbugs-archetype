@@ -29,10 +29,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version-file: '.nvmrc'
-      - run: |
-          ./mvnw -B verify -D"org.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn"
-          npm ci
-          npx semantic-release
+      - name: Verify with Maven
+        run: ./mvnw -B verify -D"org.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn"
+      - name: NPM CI
+        run: npm ci
+      - name: NPX Semantic Release
+        run: npx semantic-release
         env:
           MAVEN_USERNAME: ${{ secrets.SONATYPE_USERNAME }}
           MAVEN_CENTRAL_TOKEN: ${{ secrets.SONATYPE_TOKEN }}
