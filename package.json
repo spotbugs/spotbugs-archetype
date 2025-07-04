@@ -1,8 +1,8 @@
 {
   "devDependencies": {
-    "@terrestris/maven-semantic-release": "3.1.0",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
+    "@terrestris/maven-semantic-release": "3.1.0",
     "semantic-release": "24.2.6"
   },
   "release": {
@@ -11,7 +11,14 @@
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
       "@semantic-release/changelog",
-      "@terrestris/maven-semantic-release",
+      [
+        "@terrestris/maven-semantic-release",
+        {
+          "mvnw": true,
+          "settingsPath": ".mvn/settings.xml",
+          "updateSnapshotVersion": true
+        }
+      ],
       "@semantic-release/github",
       [
         "@semantic-release/git",

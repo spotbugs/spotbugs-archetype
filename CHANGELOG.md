@@ -1,3 +1,22 @@
+## [0.2.8](https://github.com/spotbugs/spotbugs-archetype/compare/0.2.7...0.2.8) (2025-07-03)
+
+### Usage
+
+* Allows up to java 25 as asm overridden
+* Still compliant to spotbugs 4.7.3 due to junit 4 tests in place
+* Build fixed to proper jvm compliancy level (8 in this case)
+
+### Build
+
+* Removed .idea folder as that is auto generated and not to be checked in
+* Secure github actions file and fix issues with it
+* Add extension for maven to profile Build
+* Setup for osssrh to central migration
+* Moved maven settings file to .mvn folder and corrected name
+* Updated maven wrapper to 3.9.10 including script files along with correcting line endings
+* Corrected package lock file for node through regeneration
+* Move from obsolete conveyal maven semantic release to terrestris
+
 ## [0.2.7](https://github.com/spotbugs/spotbugs-archetype/compare/0.2.6...0.2.7) (2025-03-29)
 
 ### Bug Fixes
