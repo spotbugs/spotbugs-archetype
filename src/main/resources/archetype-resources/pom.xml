@@ -72,14 +72,14 @@
             <configuration>
               <validationSets>
                 <validationSet>
-                  <dir>src/main/resources</dir>
+                  <dir>${project.basedir}/src/main/resources</dir>
                   <includes>
                     <include>findbugs.xml</include>
                   </includes>
                   <systemId>findbugsplugin.xsd</systemId>
                 </validationSet>
                 <validationSet>
-                  <dir>src/main/resources</dir>
+                  <dir>${project.basedir}/src/main/resources</dir>
                   <includes>
                     <include>messages.xml</include>
                   </includes>
