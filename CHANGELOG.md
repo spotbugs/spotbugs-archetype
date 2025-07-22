@@ -1,3 +1,10 @@
+## [0.4.4](https://github.com/spotbugs/spotbugs-archetype/compare/0.4.3...0.4.4) (2025-07-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.junit:junit-bom to v5.13.4 ([#237](https://github.com/spotbugs/spotbugs-archetype/issues/237)) ([6dd8de6](https://github.com/spotbugs/spotbugs-archetype/commit/6dd8de6b5a536074fe0d0c41aa0fc89f4d4763b3))
+
 ## [0.4.3](https://github.com/spotbugs/spotbugs-archetype/compare/0.4.2...0.4.3) (2025-07-05)
 
 
