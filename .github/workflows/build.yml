@@ -26,7 +26,7 @@ jobs:
           server-password: CI_DEPLOY_PASSWORD
           gpg-private-key: ${{ secrets.SIGNING_KEY }}
           gpg-passphrase: ${{ secrets.SIGNING_PASSWORD }}
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           node-version-file: '.nvmrc'
       - name: Verify with Maven
