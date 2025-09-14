@@ -35,10 +35,14 @@ jobs:
         with:
           node-version-file: '.nvmrc'
       - name: Verify with Maven
+        if: github.repository_owner == 'spotbugs'
         run: ./mvnw -B verify -D"org.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn"
         env:
           MAVEN_GPG_KEY_NAME: ${{ secrets.SIGNING_KEY }}
           MAVEN_GPG_PASSPHRASE: ${{ secrets.SIGNING_PASSWORD }}
+      - name: Verify with Maven
+        if: github.repository_owner != 'spotbugs'
+        run: ./mvnw -B verify -D"org.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn" -D"gpg.skip=true"
       - name: NPM CI
         run: npm ci
       - name: Copy Maven settings

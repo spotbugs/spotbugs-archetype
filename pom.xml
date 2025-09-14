@@ -95,13 +95,6 @@
             <goals>
               <goal>sign</goal>
             </goals>
-            <configuration>
-              <!-- https://central.sonatype.org/publish/publish-maven/#gpg-signed-components -->
-              <gpgArguments>
-                <arg>--pinentry-mode</arg>
-                <arg>loopback</arg>
-              </gpgArguments>
-            </configuration>
           </execution>
         </executions>
       </plugin>
