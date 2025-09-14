@@ -35,7 +35,7 @@ jobs:
         with:
           node-version-file: '.nvmrc'
       - name: Verify with Maven
-        if: github.repository_owner == 'spotbugs'
+        if: github.repository_owner == 'spotbugs' && github.event_name == 'push'
         run: ./mvnw -B verify -D"org.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn"
         env:
           MAVEN_GPG_KEY_NAME: ${{ secrets.SIGNING_KEY }}
