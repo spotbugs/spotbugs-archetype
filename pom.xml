@@ -5,7 +5,7 @@
   <groupId>com.github.spotbugs</groupId>
   <artifactId>spotbugs-archetype</artifactId>
   <name>SpotBugs Maven Archetype</name>
-  <version>0.4.7</version>
+  <version>0.4.8-SNAPSHOT</version>
   <packaging>maven-archetype</packaging>
 
   <url>https://github.com/spotbugs/spotbugs-archetype</url>
