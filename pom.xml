@@ -40,7 +40,7 @@
 
   <properties>
     <maven.compiler.release>11</maven.compiler.release>
-    <mavenArchetypeVersion>3.4.0</mavenArchetypeVersion>
+    <mavenArchetypeVersion>3.4.1</mavenArchetypeVersion>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
