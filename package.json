@@ -3,7 +3,7 @@
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
     "@terrestris/maven-semantic-release": "3.1.0",
-    "semantic-release": "24.2.9"
+    "semantic-release": "25.0.0"
   },
   "release": {
     "tagFormat": "${version}",
