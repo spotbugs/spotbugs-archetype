@@ -10,7 +10,7 @@
   <properties>
     <maven.compiler.release>11</maven.compiler.release>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <spotBugsVersion>4.9.7</spotBugsVersion>
+    <spotBugsVersion>4.9.8</spotBugsVersion>
   </properties>
 
   <description>My SpotBugs plugin project</description>
