@@ -1,3 +1,10 @@
+## [0.4.11](https://github.com/spotbugs/spotbugs-archetype/compare/0.4.10...0.4.11) (2025-10-18)
+
+
+### Bug Fixes
+
+* **deps:** update spotbugsversion to v4.9.8 ([#264](https://github.com/spotbugs/spotbugs-archetype/issues/264)) ([45ae95e](https://github.com/spotbugs/spotbugs-archetype/commit/45ae95e0840657920e7869ced01161e648335fb3))
+
 ## [0.4.10](https://github.com/spotbugs/spotbugs-archetype/compare/0.4.9...0.4.10) (2025-10-14)
 
 
