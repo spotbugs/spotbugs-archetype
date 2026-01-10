@@ -1,3 +1,10 @@
+## [0.4.14](https://github.com/spotbugs/spotbugs-archetype/compare/0.4.13...0.4.14) (2026-01-10)
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.junit:junit-bom to v6.0.2 ([#280](https://github.com/spotbugs/spotbugs-archetype/issues/280)) ([755ca20](https://github.com/spotbugs/spotbugs-archetype/commit/755ca20eceb723a8d6874956f0dfb6dc8ebc8472))
+
 ## [0.4.13](https://github.com/spotbugs/spotbugs-archetype/compare/0.4.12...0.4.13) (2025-12-17)
 
 
