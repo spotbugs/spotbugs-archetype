@@ -26,6 +26,7 @@ jobs:
           cache: maven
           distribution: temurin
           java-version: 27
+          mvn-server-repository-origins: central:https://central.sonatype.com
           server-id: central
           server-username-env-var: CI_DEPLOY_USERNAME
           server-password-env-var: CI_DEPLOY_PASSWORD
