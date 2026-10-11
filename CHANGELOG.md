@@ -1,3 +1,10 @@
+## [0.4.27](https://github.com/spotbugs/spotbugs-archetype/compare/0.4.26...0.4.27) (2026-10-11)
+
+
+### Bug Fixes
+
+* **deps:** Move back to maven 3.9 until central publishing is fixed ([bdf88f0](https://github.com/spotbugs/spotbugs-archetype/commit/bdf88f0162150b3ea7adbcb6e811e2600b6318e7))
+
 ## [0.4.26](https://github.com/spotbugs/spotbugs-archetype/compare/0.4.25...0.4.26) (2026-10-11)
 
 
