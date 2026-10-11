@@ -1,3 +1,5 @@
+name: Java Build
+
 on:
   push:
     branches:
@@ -10,7 +12,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}-${{ github.sha }}
+  group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
