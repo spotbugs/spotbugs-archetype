@@ -33,7 +33,7 @@ jobs:
           server-username-env-var: CI_DEPLOY_USERNAME
           server-password-env-var: CI_DEPLOY_PASSWORD
           gpg-private-key: ${{ secrets.SIGNING_KEY }}
-          gpg-passphrase-env-var: ${{ secrets.SIGNING_PASSWORD }}
+          gpg-passphrase-env-var: MAVEN_GPG_PASSPHRASE
       - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
           node-version-file: '.nvmrc'
