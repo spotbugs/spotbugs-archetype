@@ -46,9 +46,11 @@ jobs:
       - name: NPM CI
         run: npm ci
       - name: Copy Maven settings
+        if: github.repository_owner == 'spotbugs' && github.event_name == 'push' && github.ref == 'refs/heads/master'
         shell: bash
         run: cp ~/.m2/settings.xml ./maven_settings.xml
       - name: NPM Exec Semantic Release
+        if: github.repository_owner == 'spotbugs' && github.event_name == 'push' && github.ref == 'refs/heads/master'
         run: npm exec semantic-release
         env:
           CI_DEPLOY_USERNAME: ${{ secrets.CI_DEPLOY_USERNAME }}
