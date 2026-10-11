@@ -1,3 +1,10 @@
+## [0.4.26](https://github.com/spotbugs/spotbugs-archetype/compare/0.4.25...0.4.26) (2026-10-11)
+
+
+### Bug Fixes
+
+* **deps:** update dependency org.ow2.asm:asm to v9.11 ([#352](https://github.com/spotbugs/spotbugs-archetype/issues/352)) ([0cd0ee0](https://github.com/spotbugs/spotbugs-archetype/commit/0cd0ee05bbb09539aa8e9ddcd6977216deaff6bb))
+
 ## [0.4.25](https://github.com/spotbugs/spotbugs-archetype/compare/0.4.24...0.4.25) (2026-08-20)
 
 
