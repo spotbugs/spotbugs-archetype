@@ -1,30 +1,3 @@
-## [0.4.6](https://github.com/hazendaz/spotbugs-archetype/compare/0.4.5...0.4.6) (2026-10-11)
-
-
-### Bug Fixes
-
-* **deps:** update dependency org.junit:junit-bom to v6 ([#258](https://github.com/hazendaz/spotbugs-archetype/issues/258)) ([28dbb53](https://github.com/hazendaz/spotbugs-archetype/commit/28dbb539e3a255180e43790e62d6f7dcd8e312d6))
-* **deps:** update dependency org.junit:junit-bom to v6.0.1 ([#269](https://github.com/hazendaz/spotbugs-archetype/issues/269)) ([21cc1e4](https://github.com/hazendaz/spotbugs-archetype/commit/21cc1e465aa713743aba11f50e557e78e6d91dc3))
-* **deps:** update dependency org.junit:junit-bom to v6.0.2 ([#280](https://github.com/hazendaz/spotbugs-archetype/issues/280)) ([755ca20](https://github.com/hazendaz/spotbugs-archetype/commit/755ca20eceb723a8d6874956f0dfb6dc8ebc8472))
-* **deps:** update dependency org.junit:junit-bom to v6.0.3 ([#291](https://github.com/hazendaz/spotbugs-archetype/issues/291)) ([b4d774d](https://github.com/hazendaz/spotbugs-archetype/commit/b4d774d6ea88ee06c0a1493d5e2b71955a89cc16))
-* **deps:** update dependency org.junit:junit-bom to v6.1.0 ([#307](https://github.com/hazendaz/spotbugs-archetype/issues/307)) ([604c051](https://github.com/hazendaz/spotbugs-archetype/commit/604c051a9d385f665faa2c4bbfb15575335983fb))
-* **deps:** update dependency org.junit:junit-bom to v6.1.1 ([#322](https://github.com/hazendaz/spotbugs-archetype/issues/322)) ([60ba167](https://github.com/hazendaz/spotbugs-archetype/commit/60ba167ea9fbc3d9a104895bc02c5793dabc4cdc))
-* **deps:** update dependency org.junit:junit-bom to v6.1.2 ([#325](https://github.com/hazendaz/spotbugs-archetype/issues/325)) ([8c21036](https://github.com/hazendaz/spotbugs-archetype/commit/8c21036ff01a76b0279d60a849ba4c45d122b7d7))
-* **deps:** update dependency org.junit:junit-bom to v6.1.3 ([#339](https://github.com/hazendaz/spotbugs-archetype/issues/339)) ([928db1a](https://github.com/hazendaz/spotbugs-archetype/commit/928db1a4d607f1d551f52ab418c6b370a219984f))
-* **deps:** update dependency org.ow2.asm:asm to v9.10 ([#305](https://github.com/hazendaz/spotbugs-archetype/issues/305)) ([b716dd8](https://github.com/hazendaz/spotbugs-archetype/commit/b716dd8a88ae99a777d310a4a2221e7506629cc8))
-* **deps:** update dependency org.ow2.asm:asm to v9.10.1 ([#308](https://github.com/hazendaz/spotbugs-archetype/issues/308)) ([592a825](https://github.com/hazendaz/spotbugs-archetype/commit/592a82546f0c9d6a1e7c7752928d700423014c96))
-* **deps:** update dependency org.ow2.asm:asm to v9.11 ([#352](https://github.com/hazendaz/spotbugs-archetype/issues/352)) ([0cd0ee0](https://github.com/hazendaz/spotbugs-archetype/commit/0cd0ee05bbb09539aa8e9ddcd6977216deaff6bb))
-* **deps:** update dependency org.ow2.asm:asm to v9.9 ([#259](https://github.com/hazendaz/spotbugs-archetype/issues/259)) ([ddd77f4](https://github.com/hazendaz/spotbugs-archetype/commit/ddd77f4845744a744daf9c80e0ac6ef9c0708f86))
-* **deps:** update dependency org.ow2.asm:asm to v9.9.1 ([#278](https://github.com/hazendaz/spotbugs-archetype/issues/278)) ([19b2d08](https://github.com/hazendaz/spotbugs-archetype/commit/19b2d08f91df4fe8dd1bf455e34db82cf99f6c44))
-* **deps:** Update SpotBugs archetype version in README ([47c80be](https://github.com/hazendaz/spotbugs-archetype/commit/47c80be9fb01f14cffb231447a8e73868db4b361))
-* **deps:** update spotbugsversion to v4.10.1 ([#312](https://github.com/hazendaz/spotbugs-archetype/issues/312)) ([503509d](https://github.com/hazendaz/spotbugs-archetype/commit/503509d94e6d62258717e003d60c8978b4907697))
-* **deps:** update spotbugsversion to v4.10.2 ([#313](https://github.com/hazendaz/spotbugs-archetype/issues/313)) ([b7fbd06](https://github.com/hazendaz/spotbugs-archetype/commit/b7fbd0645311e22a8d215512ad37fe0097d242a6))
-* **deps:** update spotbugsversion to v4.10.4 ([#341](https://github.com/hazendaz/spotbugs-archetype/issues/341)) ([e55ef03](https://github.com/hazendaz/spotbugs-archetype/commit/e55ef03c595886c23e79661f78e87cd1b82bd489))
-* **deps:** update spotbugsversion to v4.9.5 ([#252](https://github.com/hazendaz/spotbugs-archetype/issues/252)) ([9d7e117](https://github.com/hazendaz/spotbugs-archetype/commit/9d7e11778ef3dee71bf74c71cc471e6d69e3c9ae))
-* **deps:** update spotbugsversion to v4.9.6 ([#253](https://github.com/hazendaz/spotbugs-archetype/issues/253)) ([6be9aff](https://github.com/hazendaz/spotbugs-archetype/commit/6be9affe9137c8a9e0478b7568853d64e262a04b))
-* **deps:** update spotbugsversion to v4.9.7 ([#262](https://github.com/hazendaz/spotbugs-archetype/issues/262)) ([198b8f2](https://github.com/hazendaz/spotbugs-archetype/commit/198b8f29e0960b6042441f4adbae8ec59706569e))
-* **deps:** update spotbugsversion to v4.9.8 ([#264](https://github.com/hazendaz/spotbugs-archetype/issues/264)) ([45ae95e](https://github.com/hazendaz/spotbugs-archetype/commit/45ae95e0840657920e7869ced01161e648335fb3))
-
 ## [0.4.25](https://github.com/spotbugs/spotbugs-archetype/compare/0.4.24...0.4.25) (2026-08-20)
 
 
